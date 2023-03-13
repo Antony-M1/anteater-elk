@@ -10,6 +10,8 @@ copy the `anteater.log` file from the log folder after that create a `temp` fold
 after that past that log file inside the `temp` folder. the final file structure like this
 `root/temp/anteater.log`
 
+![image](https://user-images.githubusercontent.com/96291963/224621481-29f6070e-0945-4ad4-b430-051e85dbba90.png)
+
 **Step 2**
 
 run all the container to create the credentials to use this command
