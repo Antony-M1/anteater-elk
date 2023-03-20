@@ -23,7 +23,8 @@ services:
    volumes:
    - ./logstash/:/logstash_dir
    - ./logstash/logstash.yml:/usr/share/logstash/config/logstash.yml
-   command: logstash -f /logstash_dir/logstash.conf
+   - ./logstash-pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+   command: logstash -f /logstash_dir/custom_tcp_logs.conf
    depends_on:
      - Elasticsearch
    ports:
